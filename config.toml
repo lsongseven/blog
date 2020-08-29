@@ -442,7 +442,7 @@ uglyURLs = false
     groupByMonth = true
 
     # Enable Chinese zodiac?
-    chineseZodiac = true
+    chineseZodiac = false
 
     # Translate the year? (valid for title)
     i18nYear = false
@@ -638,7 +638,7 @@ uglyURLs = false
     #       has a higher priority than here
 
     ## Disqus
-    enableDisqus = false
+    enableDisqus = true
     disqusShortname = ""
 
     ## Valine
@@ -689,7 +689,7 @@ uglyURLs = false
     ######################################
     # Google Site Verification
 
-    googleSiteVerification = ""
+    googleSiteVerification = "yes"
 
 
     ######################################
