@@ -632,20 +632,20 @@ uglyURLs = false
     # Note: render only in production
     #       environment
 
-    enableComments = false
+    enableComments = true
     # Note: *global settings*
     #       `comments` in post’s Front Matter
     #       has a higher priority than here
 
     ## Disqus
-    enableDisqus = true
+    enableDisqus = false
     disqusShortname = "lsongseven"
 
     ## Valine
-    enableValine = false
-    valineAppId = ""
-    valineAppKey = ""
-    valinePlaceholder = "Just go go"
+    enableValine = true
+    valineAppId = "NtCvUfoQxGCkzB3Fb1fKgPl6-gzGzoHsz"
+    valineAppKey = "TYWqgSWlpf003x3iHKIaeY7h"
+    valinePlaceholder = "吐槽"
     valinePath = ""
     valineAvatar = "mm"
     valineMeta = ["nick", "mail", "link"]
@@ -655,7 +655,7 @@ uglyURLs = false
     valineHighlight = true
     valineAvatarForce = false
     valineRecordIP = false
-    valineServerURLs = ""
+    valineServerURLs = "https://ntcvufoq.lc-cn-n1-shared.com"
     valineEmojiCDN = ""
     valineEmojiMaps = {}
     valineEnableQQ = false
