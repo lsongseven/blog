@@ -1,7 +1,8 @@
 ---
 title: "如何在kubernetes中优雅停机"
-date: 2020-08-28T22:34:57+08:00
+date: 2020-07-17T22:34:57+08:00
 draft: false
+comments: true
 ---
 
 # 优雅退出
