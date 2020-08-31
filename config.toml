@@ -216,7 +216,7 @@ uglyURLs = false
     #    pre = "internal"
     #    post = "tags"
     [[menu.main]]
-        url = "/about/me"
+        url = "/about"
         name = "About"
         weight = 5
         pre = "internal"
