@@ -1,6 +1,6 @@
 # README
 
-This repo is used to build a personal blog using [hugo](https://gohugo.io/getting-started/installing/).
+This repo is used to build a personal blog using [hugo](https://gohugo.io/getting-started/installing/). My personal blog is at <https://lsongseven.github.io/>
 
 ## Prepare Environments
 
