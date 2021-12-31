@@ -18,7 +18,7 @@ ANTLR (ANother Tool for Language Recognition) 是一个强大的文本或者二�
 
 antlr可以对某一种语言描述，根据对应的语法，生成一颗语法树，在这颗语法树中包含了语言描述与对应语法规则的关系。当你去遍历这颗语法树时，可以灵活处理遍历前和遍历后的规则，实现某种效果。（可以理解为根据一组确定的语法规则，处理一段数据，如实现某种声明、运算、调用等，从而得到某种结果）
 
-antlr最新的大版本是v4，了解相关变更详情可参考 Why do we need ANTLR v4
+antlr最新的大版本是v4，了解相关变更详情可参考 [Why do we need ANTLR v4](https://github.com/antlr/antlr4/blob/master/doc/faq/general.md)
 
 ## 2.可以用来做什么
 
@@ -31,7 +31,7 @@ antlr可以用来做各种各样的事情，比如本文要说的基于antlr4构
 
 ## 3.用antlr4实现类golang语法解析器的规则引擎
 
-最近在研究规则引擎相关的实现，g社上发现一个bilibili的开源项目gengine，基于antlr4实现了类golang的语法解析器，下面我们来以gengine为例看一下如何基于antlr4实现这个事情。
+最近在研究规则引擎相关的实现，g社上发现一个bilibili的开源项目[gengine](https://github.com/bilibili/gengine)，基于antlr4实现了类golang的语法解析器，下面我们来以gengine为例看一下如何基于antlr4实现这个事情。
 
 下面文件中描述了一个规则的表达，其中具体的规则部分表达与golang语法基本类似。这个就是在gengine中规则描述的基本形式，在gengine中，用户可以根据具体的场景构造若干个规则，通过这个规则去做一些事情。下面的描述中， rule为固定的规则描述声明词，"rulename" "rule-description" 为规则的名称和描述，salience为固定的规则优先级描述声明词，后面的10代表这个规则的优先级为10。begin和end中包围的部分为具体的规则内容，在gengine中其表达方式类似于golang的语法。
 
@@ -44,7 +44,7 @@ begin
 end
 ```
 
-对应的antlr4中的语法描述文件(gengine.g4，为了展示方便省略了部分内容，全部内容可通过链接查看)如下，具体的.g4文件结构可参考 Grammer Structure
+对应的antlr4中的语法描述文件([gengine.g4](https://github.com/bilibili/gengine/blob/main/internal/iantlr/gengine.g4)，为了展示方便省略了部分内容，全部内容可通过链接查看)如下，具体的.g4文件结构可参考 [Grammer Structure](https://github.com/antlr/antlr4/blob/master/doc/grammars.md)
 
 ```g4
 grammar gengine;
@@ -326,7 +326,7 @@ v, err, bx := rule.Execute(dataContext)
 // ...
 ```
 
-到这里似乎基于antlr4构建规则引擎的事情就做完了，用户可以随意声明一段规则，然后基于规则去做对应的业务判断。antlr4帮助我们做的其实是将输入文本转换为一个根据.g4文件的语法树，具体要怎么用这个语法树就是使用者应该考虑的事情，在规则引擎这个范畴下，可以参考gengine对应的实现。另外，可以参考他们的test，里面有很多不同的用法。
+到这里似乎基于antlr4构建规则引擎的事情就做完了，用户可以随意声明一段规则，然后基于规则去做对应的业务判断。antlr4帮助我们做的其实是将输入文本转换为一个根据.g4文件的语法树，具体要怎么用这个语法树就是使用者应该考虑的事情，在规则引擎这个范畴下，可以参考gengine对应的实现。另外，可以参考他们的[test](https://github.com/bilibili/gengine/tree/main/test)，里面有很多不同的用法。
 
 ## 4.参考
 
