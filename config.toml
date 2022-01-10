@@ -22,10 +22,10 @@ defaultContentLanguageInSubdir = false
 pluralizeListTitles = false
 
 # The length of text in words to show in summary
-summaryLength = 42
+summaryLength = 20
 
 # Enable Emoji emoticons support?
-enableEmoji = false
+enableEmoji = true
 
 # Text to display for footnote return links
 footnoteReturnLinkContents = "↩"
@@ -197,12 +197,12 @@ uglyURLs = false
     #     weight = 1
     #     pre = "internal"
     #     post = "home"
-    # [[menu.main]]
-    #    url = "/posts/"
-    #    name = "Posts"
-    #    weight = 2
-    #    pre = "internal"
-    #    post = "archive"
+    [[menu.main]]
+       url = "/posts/"
+       name = "Posts"
+       weight = 2
+       pre = "internal"
+       post = "archive"
     #[[menu.main]]
     #    url = "/categories/"
     #    name = "Categories"
@@ -430,7 +430,7 @@ uglyURLs = false
 
     displayListTitle = true
 
-    listDateFormat = "January 2"
+    listDateFormat = "January 2, 2006"
     # ATTENTION: be sure to follow the
     #            specified format
     #            https://gohugo.io/functions/format/
@@ -439,7 +439,7 @@ uglyURLs = false
     # Note: left or right
 
     # Separate the list by month?
-    groupByMonth = true
+    groupByMonth = false
 
     # Enable Chinese zodiac?
     chineseZodiac = false
@@ -514,7 +514,7 @@ uglyURLs = false
 
     enableDarkMode = true
 
-    defaultTheme = "light"
+    defaultTheme = "dark"
     # Note: light or dark
 
     hideThemeToggle = false
@@ -1258,7 +1258,7 @@ uglyURLs = false
     enableHighlight = true
 
     enableOverflowY = true
-    maxHeight = 20
+    maxHeight = 100
     # Unit: em
 
     enableCopy = true
